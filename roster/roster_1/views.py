@@ -113,7 +113,6 @@ def nev_ro(request):
     form = RosForm()
     ohi = ''
     if request.method == 'POST':
-        from roster.roster_1.forms import RosForm
         form = RosForm(request.POST)
         if form.is_valid():
             form.save()

@@ -2,10 +2,6 @@ from .models import Ros
 from django.forms import ModelForm, TextInput, Textarea
 
 
-
-
-
-
 class RosForm(ModelForm):
     class Meta:
         model = Ros

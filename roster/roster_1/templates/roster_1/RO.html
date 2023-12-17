@@ -1,6 +1,6 @@
 {% extends 'roster_1/baz_inf.html'  %}
 {% load static %}
-
+{% load symma_f %}
 
 {% block alfa %}
 
@@ -9,6 +9,7 @@
     <h3>формат:   {{a.form }} .</h3>
     <h3>ростер "одной строкой":</h3>
     <h5>{{a.r|linebreaks}}</h5>
+    <h2>{{a.r|filsym}}</h2>
 
 
     <a_il>

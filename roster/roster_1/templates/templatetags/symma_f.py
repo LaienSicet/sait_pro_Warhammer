@@ -1,8 +1,8 @@
-#
 from django import template
 
 register = template.Library()
-@register.filter(name='filsym')
+
+@register.filter
 def filsym(value):
     R = value.split(" ")
     R2 = []

@@ -20,13 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure--0v^%*t@v$x**hpyq7o68g)c!bn&iz99os!f7lgbrtjrbkl,l+6567578789789090998778567667666c(m@3_'
+SECRET_KEY = 'django-insecure--0v^%*t@v$x**hpyq7o68g)c!bn&iz99os!f7lgbrtjrbkl,l+656757hnrhrhrh(m@3_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True # False
+DEBUG = True
 
 ALLOWED_HOSTS = [] #['127.0.0.1']
-
+#split: cannot open 'huge_file' for reading: No such file or directory
 
 # Application definition
 
@@ -123,3 +123,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#unzip django_ROSTER
+#mkvirtualenv --python=/usr/bin/python3.10 GK-virtualenv
+# pip install django
+# pip install -r requirements.txt
