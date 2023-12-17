@@ -1,0 +1,24 @@
+{% extends 'roster_1/baz_inf.html'  %}
+{% load static %}
+
+{% block alfa%}
+    <h2>
+        {{ohi}}
+    </h2>
+    <a_na>
+        <img src = "{% static 'roster_1/img/unnamed.jpg' %}" alt="" >
+    </a_na>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.nazv }}<br>
+        {{ form.form }}<br>
+        {{ form.r }}<br>
+        <a_kno href=""><li><button class="btn btn-danger" type="submit">ок</button></li> </a_kno>
+
+    </form>
+
+{% endblock %}
+
+
+

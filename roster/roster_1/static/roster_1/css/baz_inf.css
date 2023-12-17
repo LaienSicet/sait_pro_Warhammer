@@ -1,0 +1,303 @@
+body {height: 1250vh;
+}
+
+
+aside {background: #cccaca;
+    float : left;
+    color: #f8f2fa;
+    width:19%;
+    height: 1250vh;
+    border-right: 4px solid #3e0d4a;
+}
+
+
+
+aside h2{
+    color: #3e0d4a;
+    text-align: center;
+}
+
+aside img {
+    width: 290px;
+    float: center;
+    width: 100%;
+    solid #3e0d4a;
+}
+
+aside ul a {
+    left: 25%;
+    list-style: none;
+    color: #201221;
+    transition: all 1s ease;
+}
+
+aside ul a:hover, aside ul li:hover {
+    color: #ba0612;
+    text-decoration: none;
+    transform: scale(1.05,1.35);
+}
+
+
+aside_1 {
+    background: #cccaca;
+    float: left;
+    color: #3e0d4a;
+    width:60%;
+    height: 1250vh;
+}
+
+body aside_1 h1 {
+    color: #3e0d4a;
+    text-align: center;
+}
+
+
+aside_1 a img {
+    float: right;
+    width:25%;
+    padding: 0.5%;
+    border-radius: 25px 25px 25px 25px;
+}
+
+aside_1 a_1 img {
+    float: center;
+    width:60%;
+    padding: 0.5%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+aside_1 h4 ul a {
+    left: 25%;
+    list-style: none;
+    color: #201221;
+}
+
+aside_1 h4 ul a:hover, aside_1 ul li:hover {
+    color: #ba0612;
+    text-decoration: none;
+    transform: scale(1.01,1.35);
+}
+
+
+
+aside_1 a_2 img {
+    float: right;
+    width:370px;
+    padding: 0.5%;
+    border-radius: 10px 10px 10px 10px;
+    position:absolute;
+	left: 840px;
+	top:235px;
+}
+
+aside_1 a_3 img {
+    float: right;
+    width:75px;
+    padding: 0.5%;
+    border-radius: 10px 10px 10px 10px;
+    position:absolute;
+	left: 875px;
+	top: 120px;
+}
+
+aside_1 a_4 img {
+    left: 50%;
+    width:650px;
+    padding: 1%;
+}
+
+aside_1 a_na img {
+    width: 920px;
+    padding: 2%;
+
+}
+
+aside_1 a_na_2 img {
+    width: 920px;
+    padding: 5%;
+}
+
+
+aside_1 a_fff form button{
+    position:absolute;
+    color: #3e0d4a;
+    left: 175px;
+    top: 75px;
+}
+
+aside_1 a_fff form a_l{
+    position:absolute;
+    left: -185px;
+    top: 55px;
+    color: #f8f2fa;
+}
+
+aside_1 a_fff form a_p {
+    position:absolute;
+    left: 405px;
+    top: 55px;
+    color: #f8f2fa;
+}
+
+aside_1 h2 {
+    text-align: center;
+    color: #3e0d4a;
+    clear: both;
+}
+
+aside_1 a_h h3 {
+    color: #3e0d4a;
+}
+
+aside_1 a_st img {
+    position:absolute;
+	left: 450px;
+	top: 100px;
+}
+
+aside_1 a_5 img {
+    float: center;
+    width:75%;
+    padding: 0.5%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+aside_1 a_il ul, aside_1 a_il_h ul{
+    padding-left: 0;
+}
+
+aside_1 a_il ul a li_1 img{
+    float: left;
+    width:230px;
+    padding: 1%;
+    border-radius: 75px 25px 25px 25px;
+}
+
+
+aside_1 a_il_h ul a li_1 img{
+    float: left;
+    width: 153px;
+    padding: 0.5%;
+    border-radius: 25px 10px 10px 10px;
+
+}
+
+
+aside_1 form a_kno{
+    position:absolute;
+    left: 75%;
+    top: 420px;
+    list-style: none;
+}
+
+aside_1 form{
+    position:absolute;
+    left: 550px;
+    top: 75px;
+    width: 400px;
+    color: #3e0d4a;
+}
+
+aside_1 a_red ul a {
+    position:absolute;
+    left: 64.5%;
+    top: 75px;
+    list-style: none;
+}
+
+aside_1 a_del ul a {
+    position:absolute;
+    left: 73%;
+    top: 75px;
+    list-style: none;
+}
+
+
+aside_1 div form a_d1 {
+    width: 400px;
+    position:absolute;
+    left: -200px;
+    top: 15px;
+    list-style: none;
+    }
+
+
+aside_1 div form a_d2 {
+    position:absolute;
+    left: 245px;
+    top: 655px;
+    list-style: none;
+}
+aside_1 a_d3 ul a {
+    position:absolute;
+    left: 678px;
+    top: 730px;
+    list-style: none;
+    }
+
+aside_1  a_bordyr img{
+    float: left;
+    width: 910px;
+    padding: 10%;
+    clear: both;
+}
+
+
+aside_1 h5   {
+    margin-left:30px;
+}
+
+
+
+
+
+aside_2 {
+    background: #cccaca;
+    float :right;
+    color: #f8f2fa;
+    width:21%;
+    height: 1250vh;
+    border-left: 4px solid #3e0d4a;
+}
+
+
+aside_2 h2{
+    color: #3e0d4a;
+    text-align: center;
+}
+
+
+aside_2 img {
+    width: 290px;
+    float: center;
+    width: 100%;
+    }
+
+
+
+aside_2 ul a {
+    left: 25%;
+    list-style: none;
+    color: #201221;
+    transition: all 1s ease;
+}
+
+aside_2 ul a:hover, aside_2 ul li:hover {
+    color: #ba0612;
+    text-decoration: none;
+    transform: scale(1.05,1.35);
+}
+
+
+aside_2 ul h5  {
+    position:absolute;
+	left: 1300px;
+	top: 1000px;
+}
+
+aside_2 a_inf {
+    position:absolute;
+    left: 1260px;
+	top: 1500px;
+	color: #3e0d4a;
+}

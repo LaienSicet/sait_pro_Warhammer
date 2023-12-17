@@ -1,0 +1,120 @@
+{% extends 'roster_1/baz_inf.html'  %}
+{% load static %}
+
+
+{% block alfa%}
+    {% for a in B %}
+        <div class="description">
+
+            <h2>{{a.0}}</h2>
+
+            <h2>на сумму: {{a.1}}.</h2>
+        </div>
+        <br>
+            <a_il_h>
+                <ul>
+
+                    {% if 'Драйго' in a.0.r %}
+                        <a href="{% url 'Draigo' %}" ><li_1><img src = "{% static 'roster_1/img/Draigo_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'Кроу' in a.0.r %}
+                        <a href="{% url 'Kr' %}" ><li_1><img src = "{% static 'roster_1/img/kroy_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'брат-капитан Штэрн' in a.0.r or 'Штэрн' in a.0.r or 'брат-кэп. Штэрн' in a.0.r  %}
+                        <a href="{% url 'Htern' %}" ><li_1><img    src = "{% static 'roster_1/img/Htern_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'либр' in a.0.r or 'библиарий' in a.0.r or 'либр в термо арморе' in a.0.r  %}
+                        <a href="{% url 'libr' %}" ><li_1><img    src = "{% static 'roster_1/img/libr_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'технодесантник' in a.0.r or 'техмар' in a.0.r or 'тех. мар' in a.0.r %}
+                        <a href="{% url 'tehmar' %}" ><li_1><img src = "{% static 'roster_1/img/tehmar_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'чемпион' in a.0.r %}
+                        <a href="{% url 'hempion' %}" ><li_1><img src = "{% static 'roster_1/img/hempion_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'брат-капитан' in a.0.r or 'кэп' in a.0.r or 'брат-кэп' in a.0.r  %}
+                        <a href="{% url 'kep' %}" ><li_1><img    src = "{% static 'roster_1/img/kep_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'великий магистр' in a.0.r or 'магистр' in a.0.r or 'Магистр' in a.0.r  %}
+                        <a href="{% url 'magi' %}" ><li_1><img    src = "{% static 'roster_1/img/magi_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'капеллан' in a.0.r %}
+                        <a href="{% url 'kapil' %}" ><li_1><img    src = "{% static 'roster_1/img/kapil_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'ГМ_в_NDK' in a.0.r or 'ГМвNDK' in a.0.r %}
+                        <a href="{% url 'GM_v_NDK' %}" ><li_1><img    src = "{% static 'roster_1/img/GM_v_NDK_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+
+
+                    {% if 'ударный отряд' in a.0.r or 'страйк сквад' in a.0.r or 'SS' in a.0.r %}
+                        <a href="{% url 'skvad' %}" ><li_1><img src = "{% static 'roster_1/img/skvad_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'пурифаеры' in a.0.r or 'очистители' in a.0.r %}
+                        <a href="{% url 'purif' %}" ><li_1><img src = "{% static 'roster_1/img/purif_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'перехватчики' in a.0.r %}
+                        <a href="{% url 'perehv' %}" ><li_1><img src = "{% static 'roster_1/img/perehv_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'отряд очищения' in a.0.r or 'чистельщики' in a.0.r %}
+                        <a href="{% url 'ohihe' %}" ><li_1><img src = "{% static 'roster_1/img/ohihe_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+
+                    {% if 'палы' in a.0.r or 'паладины' in a.0.r or 'паладин-сквад' in a.0.r  %}
+                        <a href="{% url 'palad' %}" ><li_1><img src = "{% static 'roster_1/img/paladins_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'терминаторы' in a.0.r %}
+                        <a href="{% url 'termi' %}" ><li_1><img src = "{% static 'roster_1/img/termi_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'сервиторы' in a.0.r %}
+                        <a href="{% url 'serv' %}" ><li_1><img src = "{% static 'roster_1/img/servitor_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+
+
+
+                    {% if 'НДК' in a.0.r %}
+                        <a href="{% url 'NDK' %}" ><li_1><img src = "{% static 'roster_1/img/NDK_1.png' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'рино' in a.0.r or 'рина' in a.0.r%}
+                        <a href="{% url 'rino' %}" ><li_1><img src = "{% static 'roster_1/img/rino_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'дред' in a.0.r or 'дрэд' in a.0.r or 'дрэдноут' in a.0.r or 'почётный дрэдноут' in a.0.r%}
+                        <a href="{% url 'dred' %}" ><li_1><img src = "{% static 'roster_1/img/dred_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'штормовой коготь' in a.0.r or 'коготь' in a.0.r or 'самолёт' in a.0.r %}
+                        <a href="{% url 'kogoti' %}" ><li_1><img src = "{% static 'roster_1/img/kogoti_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+
+
+                    {% if 'виндикар' in a.0.r or 'вендикар' in a.0.r or 'ассасин вендикар' in a.0.r  %}
+                        <a href="{% url 'vind' %}" ><li_1><img    src = "{% static 'roster_1/img/vind_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'калидус' in a.0.r or 'ассасим-метаморф' in a.0.r or 'ассасин калидус' in a.0.r  %}
+                        <a href="{% url 'kali' %}" ><li_1><img    src = "{% static 'roster_1/img/kali_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+                    {% if 'аколиты' in a.0.r or 'аколлиты' in a.0.r %}
+                        <a href="{% url 'akolit' %}" ><li_1><img    src = "{% static 'roster_1/img/akolit_1.jpg' %}" alt="" ></li_1></a>
+                    {% endif %}
+
+
+                </ul>
+            </a_il_h>
+
+        <br>
+        {% if not forloop.last %}
+            <a_bordyr>
+                <img    src = "{% static 'roster_1/img/bordyr.jpg' %}" alt="">
+            </a_bordyr>
+        {% endif %}
+    {% endfor %}
+
+    {#<h2>{{a}}</h2>#}
+    {#<h3>формат:   {{a.form}} .</h3>#}
+    {#<h3>ростер "одной строкой":</h3>#}
+    {#<h5>{{a.r}}</h5>#}
+
+
+
+
+
+
+{% endblock %}

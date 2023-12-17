@@ -1,0 +1,44 @@
+{% extends 'roster_1/baz_inf.html'  %}
+{% load static %}
+
+{% block alfa%}
+    <a_na>
+       {# <img src = "{% static 'roster_1/img/na.jpg' %}" alt="" > #}
+    </a_na>
+
+    {% for i in a %}
+        <ul>
+            <a><a href = "{% url 'P_skayt'%}" ><li>i</li></a></a>
+        </ul>
+
+        <h5>{{i}}</h5>
+        <h5>{{i.form}}</h5>
+        <h5>{{i.r}}</h5>
+        {% if 'Кроу' in i.r %}
+            <a_il>
+                <img src = "{% static 'roster_1/img/kroy.webp' %}" alt="" >
+            </a_il>
+            <a_il>
+                <img src = "{% static 'roster_1/img/kroy.webp' %}" alt="" >
+            </a_il>
+            <a_il>
+                <img src = "{% static 'roster_1/img/kroy.webp' %}" alt="" >
+            </a_il>
+            <a_il>
+                <img src = "{% static 'roster_1/img/kroy.webp' %}" alt="" >
+            </a_il>
+            <a_il>
+                <img src = "{% static 'roster_1/img/kroy.webp' %}" alt="" >
+            </a_il>
+        {% endif%}
+
+
+    {% endfor %}
+    {{a}}
+    {{b}}
+
+    {% if b > 6 %}
+        {{b}}
+
+    {% endif %}
+{% endblock %}

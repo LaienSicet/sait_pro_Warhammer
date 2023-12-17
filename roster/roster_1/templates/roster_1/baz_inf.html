@@ -1,0 +1,126 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/bootstrap3/bootstrap.min.css" />
+    <link rel="stylesheet" href="{% static 'roster_1/css/baz_inf.css' %} " >
+    <title>базавая информация</title>
+
+</head>
+<body>
+    <aside>
+
+
+     <img src = "{% static 'roster_1/img/ikonka.jpg' %}" alt="" >
+        {% if  A %}
+            <h2>ростера</h2>
+        {% endif %}
+        <ul>
+            {% for i in A%}
+                <h5><a href="{% url 'test_vibor' i.id %}" ><li>{{i}}</li></a></h5>
+            {% endfor %}
+        </ul>
+
+        <ul>
+            {% if request.user.is_authenticated %}
+                <h3><a href="{% url 'nev_ro'%}" ><li>новый ростер</li></a></h3>
+            {% endif %}
+            <h3><a href="{% url 'heti' %}" ><li>парад ростеров</li></a></h3>
+        </ul>
+
+        <h2>юниты</h2>
+        <ul>
+            <a href="{% url 'Draigo' %}" ><li>Калдор Драйго</li></a>
+            <a href="{% url 'Kr' %}" ><li>Гарран Кроу</li></a>
+            <a href="{% url 'Htern' %}" ><li>брат-капитан Штэрн</li></a>
+            <a href="{% url 'libr' %}" ><li>библиарий</li></a>
+            <a href="{% url 'tehmar' %}" ><li>технодесантник</li></a>
+            <a href="{% url 'hempion' %}" ><li>чемпион</li></a>
+            <a href="{% url 'kep' %}" ><li>брат-капитан</li></a>
+            <a href="{% url 'magi' %}" ><li>великий магистр</li></a>
+            <a href="{% url 'kapil' %}" ><li>капеллан</li></a>
+            <a href="{% url 'GM_v_NDK' %}" ><li>великий магистр в НДК</li></a>
+            <br>
+            <a href="{% url 'skvad' %}" ><li>ударный отряд</li></a>
+            <a href="{% url 'purif' %}" ><li>пурифаеры</li></a>
+            <a href="{% url 'perehv' %}" ><li>перехватчики</li></a>
+            <a href="{% url 'ohihe' %}" ><li>отряд очищения</li></a>
+            <br>
+            <a href="{% url 'termi' %}" ><li>терминаторы</li></a>
+            <a href="{% url 'palad' %}" ><li>паладины</li></a>
+            <a href="{% url 'serv' %}" ><li>сервиторы</li></a>
+            <br>
+            <a href="{% url 'NDK' %}" ><li>НДК</li></a>
+            <a href="{% url 'dred' %}" ><li>почётный дрэдноут</li></a>
+            <a href="{% url 'rino' %}" ><li>рино</li></a>
+            <a href="{% url 'razer' %}" ><li>разербэк</li></a>
+            <a href="{% url 'kogoti' %}" ><li>штормовой коготь</li></a>
+            <br>
+            <a href="{% url 'vind' %}" ><li>виндикар</li></a>
+            <a href="{% url 'kali' %}" ><li>калидус</li></a>
+            <a href="{% url 'akolit' %}" ><li>аколиты Инквизиции</li></a>
+        </ul>
+
+    </aside>
+
+
+    <aside_1>
+        {% block alfa %}
+        {% endblock %}
+    </aside_1>
+
+    <aside_2>
+        <img src = "{% static 'roster_1/img/ikonka_2.jpg' %}" alt="" >
+        <ul>
+            <h2>спец. правила:</h2>
+            <a href="{% url 'p_1' %}" ><li>АТАКА ТЕЛЕПОРТАЦИЕЙ</li></a>
+            <a href="{% url 'P_tel_hynt' %}" ><li>ШУНТ ТЕЛЕПОРТАЦИИ</li></a>
+            <br>
+            <a href="{% url 'P_AI' %}" ><li>НАЗНАЧЕННЫЕ АГЕНТЫ</li></a>
+            <h2>стратагемы:</h2>
+            <a href="{% url 'st_1'%}" ><li>ОРЕОЛ В ОГНЕ ДУШИ  2CP</li></a>
+            <a href="{% url 'st_2'%}" ><li>СМЕРТЬ ИЗ ВАРПА    1CP</li></a>
+            <a href="{% url 'st_3'%}" ><li>ПРОГНОЗИРУЕМОЕ ПРИБЫТИЕ  1CP</li></a>
+            <a href="{% url 'st_4'%}" ><li>ТУМАНЫ ДЕЙМОСА  1CP</li></a>
+            <a href="{% url 'st_5'%}" ><li>ИСТИННО СЕРЕБРЯНЫЕ ДОСПЕХИ  1CP</li></a>
+            <a href="{% url 'st_6'%}" ><li>ЛУЧЕЗАРНЫЙ УДАР 2CP</li></a>
+            <h2>улучшения:</h2>
+            <a href="{% url 'Y_1'%}" ><li>Первыми вступают в бой</li></a>
+            <a href="{% url 'Y_2'%}" ><li>Знак неотложности</li></a>
+            <a href="{% url 'Y_3'%}" ><li>Domina Liber Daemonica</li></a>
+            <a href="{% url 'Y_4'%}" ><li>Неизбежный гнев</li></a>
+
+            <br>
+
+            <h3><a href="{% url 'AAA' %}" ><li>на первую страницу</li></a></h3>
+            {% if not request.user.is_authenticated %}
+                <h3><a href="{% url 'dv:login' %}" ><li>авторизация</li></a></h3>
+            {% endif %}
+            {% if request.user.is_authenticated %}
+                <h3><a href="{% url 'dv:logout' %}" ><li>разлогиниться</li></a></h3>
+            {% endif %}
+
+        </ul>
+
+
+        <a_inf>
+            Учебный, не коммерческий проект. <br>
+            Использован справочный<br>
+            материал сайта: wahapedia.ru<br>
+            Использован фото и художественный материал с просторов интернета.<br>
+            Увы... даже подписи нашлись не везде.<br>
+            <br>
+            Разработчик: Тарасов Д.Л.
+            laiensicet@gmail.com
+        </a_inf>
+    </aside_2>
+</body>
+</html>
+
+

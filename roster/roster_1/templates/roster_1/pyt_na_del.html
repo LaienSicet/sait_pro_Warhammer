@@ -1,0 +1,31 @@
+{% extends 'roster_1/baz_inf.html'  %}
+{% load static %}
+
+{% block alfa%}
+    <h2>
+        {{ohi}}
+    </h2>
+    <a_na>
+        <img src = "{% static 'roster_1/img/fon_1.jpg' %}" alt="" >
+    </a_na>
+
+    <div class="features">
+        <form method="post">
+            {% csrf_token %}
+            <a_d1><h1>точно удалить, "{{a}}"?!</h1></a_d1>
+
+            <a_d2><button class="btn btn-danger" type="submit">ага.</button></a_d2>
+        </form>
+    </div>
+    <a_d3>
+        <ul>
+            <a href="{% url 'AAA'%}" class="btn btn-danger" ><li>нет!</li></a>
+        </ul>
+    </a_d3>
+
+
+
+{% endblock %}
+
+
+

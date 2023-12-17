@@ -1,0 +1,28 @@
+{% extends 'roster_1/baz_inf.html'  %}
+{% load static %}
+
+
+{% block alfa%}
+    <h1>авторизация</h1>
+    <a_na_2>
+        <img src = "{% static 'roster_1/img/ууу.jpg' %}" alt="" >
+    </a_na_2>
+    <a_fff>
+        <form method="post">
+            {% csrf_token %}
+
+            <a_l>
+                <h4>логин</h4>
+                {{ form.username }}
+            </a_l>
+
+            <a_p>
+                <h4>пароль</h4>
+                {{ form.password }}
+            </a_p>
+
+            <br>
+            <p><button type="submit">Войти</button></p>
+        </form>
+    </a_fff>
+{% endblock %}

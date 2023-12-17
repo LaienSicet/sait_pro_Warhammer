@@ -1,0 +1,141 @@
+{% extends 'roster_1/baz_inf.html'  %}
+
+
+{% block alfa %}
+    <a>
+        <img  {% block f1 %}{% endblock %} alt="" >
+    </a>
+    <h1>
+        {% block imia %}
+        {% endblock %}
+    </h1>
+    <a_1>
+        <img  {% block f2 %}{% endblock %} alt="" >
+    </a_1>
+    <a_2>
+        <img {% block f3 %}{% endblock %} alt="">
+    </a_2>
+    <a_3>
+        <img {% block f4 %}{% endblock %} alt="">
+    </a_3>
+    <h3>СПОСОБНОСТИ</h3>
+
+    <h4>
+        {% block spo %}
+        {% endblock %}
+    </h4>
+    {% if '1' in C or '2' in C or '3' in C or '4' in C or '5' in C %}
+        <h3>CORE: </h3>
+    {% endif%}
+    <h4>
+        <ul>
+            {% if '1' in C %}
+                <a href = "{% url 'cor_g_y'%}" ><li>Глубокий удар</li></a>
+            {% endif %}
+            {% if '2' in C %}
+                <a href="{% url 'cor_l'%}" ><li>Лидер</li></a>
+            {% endif %}
+            {% if '3' in C %}
+                <a href = "{% url 'p_vzriv'%}" ><li>Взрыв  Д3</li></a>
+            {% endif %}
+            {% if '4' in C %}
+                <a href = "{% url 'palyba'%}" ><li>Открытая палуба 2</li></a>
+            {% endif %}
+            {% if '5' in C %}
+                <a href = "{% url 'P_skayt'%}" ><li>Cкауты 6</li></a>
+            {% endif %}
+            {% if '6' in C %}
+                <a href = "{% url 'P_pervim'%}" ><li>Сражается первым</li></a>
+            {% endif %}
+            {% if '7' in C%}
+                <a href = "{% url 'P_laz'%}" ><li>Лазутчики</li></a>
+            {% endif %}
+            {% if '8' in C%}
+                <a href = "{% url 'P_skrit'%}" ><li>Скрытность</li></a>
+            {% endif %}
+            {% if '9' in C%}
+                <a href = "{% url 'P_odin'%}" ><li>Одинокий оперативник</li></a>
+            {% endif %}
+            {% if '10' in C %}
+                <a href = "{% url 'p_vzriv'%}" ><li>Взрыв  1</li></a>
+            {% endif %}
+            {% if '11' in C %}
+                <a href = "{% url 'P_hover'%}" ><li>Парение</li></a>
+            {% endif %}
+
+
+
+
+
+        </ul>
+    </h4>
+    <h3>ФРАКЦИЯ:     {% block fra %}{% endblock %}</h3>
+
+
+    <a_4>
+        <img {% block f5 %}{% endblock %} alt="">
+    </a_4>
+    <h3>СТРАТАГЕМЫ:</h3>
+    <h4>
+        <ul>
+            {% if '1' in S %}
+                <a href="{% url 'st_1'%}" ><li>ОРЕОЛ В ОГНЕ ДУШИ  2CP</li></a>
+            {% endif %}
+            {% if '2' in S %}
+                <a href="{% url 'st_2'%}" ><li>СМЕРТЬ ИЗ ВАРПА    1CP</li></a>
+            {% endif %}
+            {% if '3' in S %}
+                <a href="{% url 'st_3'%}" ><li>ПРОГНОЗИРУЕМОЕ ПРИБЫТИЕ  1CP</li></a>
+            {% endif %}
+            {% if '4' in S %}
+                <a href="{% url 'st_4'%}" ><li>ТУМАНЫ ДЕЙМОСА  1CP</li></a>
+            {% endif %}
+            {% if '5' in S %}
+                <a href="{% url 'st_5'%}" ><li>ИСТИННО СЕРЕБРЯНЫЕ ДОСПЕХИ  1CP</li></a>
+            {% endif %}
+            {% if '6' in S %}
+                <a href="{% url 'st_6'%}" ><li>ЛУЧЕЗАРНЫЙ УДАР 2CP</li></a>
+            {% endif %}
+
+            <h1></h1>
+            {% if '1' in S0 %}
+                <a href="{% url 'st_7'%}" ><li>ПОВТОРНЫЙ БРОСОК КОМАНДЫ  1CP</li></a>
+            {% endif %}
+            {% if '2' in S0 %}
+                <a href="{% url 'st_8'%}" ><li>КОНТРАТАКА  2CP</li></a>
+            {% endif %}
+            {% if '3' in S0 %}
+                <a href="{% url 'st_13'%}" ><li>ГРАНДИОЗНЫЙ ВЫЗОВ  1CP</li></a>
+            {% endif %}
+            {% if '4' in S0 %}
+                <a href="{% url 'st_11'%}" ><li>БЕЗУМНАЯ ХРАБРОСТЬ   1CP</li></a>
+            {% endif %}
+            {% if '5' in S0 %}
+                <a href="{% url 'st_12'%}" ><li>ГРАНАТА   1CP</li></a>
+            {% endif %}
+            {% if '6' in S0 %}
+                <a href="{% url 'st_14'%}" ><li>ТАНКОВЫЙ ШОК   1CP</li></a>
+            {% endif %}
+            {% if '7' in S0 %}
+                <a href="{% url 'st_15'%}" ><li>БЫСТРОЕ ПРОНИКНОВЕНИЕ   1CP</li></a>
+            {% endif %}
+            {% if '8' in S0 %}
+                <a href="{% url 'st_9'%}" ><li>УПРЕЖДАЮЩИЙ ОГОНЬ  1CP</li></a>
+            {% endif %}
+            {% if '9' in S0 %}
+                <a href="{% url 'S_zal_na_ze'%}" ><li>ЛЕЧЬ НА ЗЕМЛЮ   1CP</li></a>
+            {% endif %}
+            {% if '10' in S0 %}
+                <a href="{% url 'st_16'%}" ><li>ДЫМОВАЯ ЗАВЕСА   1CP</li></a>
+            {% endif %}
+            {% if '11' in S0 %}
+                <a href="{% url 'st_10'%}" ><li>ГЕРОИЧЕСКОЕ ВМЕШАТЕЛЬСТВО   2CP</li></a>
+            {% endif %}
+        </ul>
+    </h4>
+
+    <a_5>
+        <img  {% block f6 %}{% endblock %} alt="" >
+    </a_5>
+
+{% endblock %}

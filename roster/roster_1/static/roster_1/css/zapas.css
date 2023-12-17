@@ -1,0 +1,107 @@
+body {background: #cccaca;
+}
+
+aside {
+    background: #cccaca;
+    float : left;
+    color: # f8f2fa;
+    width:19%;
+    height: 100vh;
+    border-right: 3px solid #3e0d4a;
+
+}
+
+aside h2{
+    color: #3e0d4a;
+    text-align: center;
+}
+
+aside img {
+    width: 290px;
+    float: center;
+    width: 100%;
+    border-radius: 0px 70px 100px 0px;
+    solid #3e0d4a;
+}
+
+aside_1 {
+    background: #cccaca;
+    float :right;
+    color: # f8f2fa;
+    width:21%;
+    height: 100vh;
+    border-left: 3px solid #3e0d4a;
+    border-radius: 70px 0px 0px 100px;
+}
+
+
+aside_1 h2{
+    color: #3e0d4a;
+    text-align: center;
+}
+
+
+aside_1 img {
+    width: 290px;
+    float: center;
+    border-radius: 70px 0px 0px 100px;
+    width: 100%;
+}
+
+aside_1 img {
+    width: 290px;
+    float: center;
+    border-radius: 70px 0px 0px 100px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+aside_2 {
+    background: #cccaca;
+    float :right;
+    color: # f8f2fa;
+    width:21%;
+    height: 100vh;
+    border-left: 3px solid #3e0d4a;
+    border-radius: 70px 0px 0px 100px;
+}
+
+aside_2 h2{
+    color: #3e0d4a;
+    text-align: center;
+}
+
+aside_2 img {
+    width: 290px;
+    float: center;
+    border-radius: 70px 0px 0px 100px;
+    width: 100%;
+}
+
+
+    {% block alfa %}
+    {% endblock %}
+
+aside_1 a_il ul a:hover, aside_1 a_il ul a li_1 img:hover{
+    float: left;
+    width:220px;
+    padding: 1%;
+    border-radius: 45px 25px 25px 25px;
+    transform: scale(0.85, 0.85);
+}
+
+left: 25%;
+
+aside_1 a_il ul a li_1 img{
+    float: left;
+    width:220px;
+    padding: 1%;
+    border-radius: 25px 25px 25px 25px;
+}

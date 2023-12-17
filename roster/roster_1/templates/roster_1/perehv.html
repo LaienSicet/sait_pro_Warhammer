@@ -1,0 +1,69 @@
+{% extends 'roster_1/YNIT.html'  %}
+{% load static %}
+
+{% block f1 %}
+    src = "{% static 'roster_1/img/perehv_1.jpg' %}"
+{% endblock %}
+
+{% block imia %}
+    перехватчики
+{% endblock %}
+
+{% block f2 %}
+    src = "{% static 'roster_1/img/perehv_2.jpg' %}"
+{% endblock %}
+
+{% block f3 %}
+    src = "{% static 'roster_1/img/perehv_3.jpg' %}"
+{% endblock %}
+
+{% block f4 %}
+    src = "{% static 'roster_1/img/perehv_4.jpg' %}"
+{% endblock %}
+
+{% block spo %}
+    <h5>
+        Личные телепорты:<br> На вашей фазе стрельбы, после выстрела этого юнита, если он не находится в пределах радиуса
+        поражения одного или нескольких вражеских юнитов, он может совершить обычное движение длиной до 6 дюймов,
+        как если бы это была ваша фаза передвижения. Если это произойдет, то до конца хода данное подразделение не
+        имеет права объявлять атаку.
+    </h5>
+{% endblock %}
+
+{% block ssilki_1 %}
+    <ul>
+        <a href = "{% url 'cor_g_y'%}" ><li>Глубокий удар</li></a>
+    </ul>
+{% endblock %}
+
+{% block fra %} Teleport Assault {% endblock %}
+
+{% block f5 %}
+    src = "{% static 'roster_1/img/perehv_6.jpg' %}"
+{% endblock %}
+
+
+{% block ssilki_2 %}
+    <ul>
+        <a href="{% url 'st_1'%}" ><li>ОРЕОЛ В ОГНЕ ДУШИ  2CP</li></a>
+        <a href="{% url 'st_2'%}" ><li>СМЕРТЬ ИЗ ВАРПА    1CP</li></a>
+        <a href="{% url 'st_3'%}" ><li>ПРОГНОЗИРУЕМОЕ ПРИБЫТИЕ  1CP</li></a>
+        <a href="{% url 'st_4'%}" ><li>ТУМАНЫ ДЕЙМОСА  1CP</li></a>
+        <a href="{% url 'st_5'%}" ><li>ИСТИННО СЕРЕБРЯНЫЕ ДОСПЕХИ  1CP</li></a>
+        <a href="{% url 'st_6'%}" ><li>ЛУЧЕЗАРНЫЙ УДАР 2CP</li></a>
+        <h1></h1>
+        <a href="{% url 'st_7'%}" ><li>ПОВТОРНЫЙ БРОСОК КОМАНДЫ  1CP</li></a>
+        <a href="{% url 'st_8'%}" ><li>КОНТРАТАКА  2CP</li></a>
+        <a href="{% url 'st_11'%}" ><li>БЕЗУМНАЯ ХРАБРОСТЬ   1CP</li></a>
+        <a href="{% url 'st_12'%}" ><li>ГРАНАТА   1CP</li></a>
+        <a href="{% url 'st_15'%}" ><li>БЫСТРОЕ ПРОНИКНОВЕНИЕ   1CP</li></a>
+        <a href="{% url 'st_9'%}" ><li>УПРЕЖДАЮЩИЙ ОГОНЬ  1CP</li></a>
+        <a href="{% url 'st_10'%}" ><li>ГЕРОИЧЕСКОЕ ВМЕШАТЕЛЬСТВО   2CP</li></a>
+
+
+    </ul>
+{% endblock %}
+
+{% block f6 %}
+    src = "{% static 'roster_1/img/perehv_5.jpg' %}"
+{% endblock %}
