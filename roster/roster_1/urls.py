@@ -76,6 +76,8 @@ urlpatterns = [
     path("P_AI", views.P_AI, name='P_AI'),
     #path("<path:w>", views.baz_inf_w, name='AAA_w') ### экспериментальный уловитель фигни . возвращяет обратно на первую страницу
     #######################################################
+    path("kyrs_1", views.KYRS, name='KY'),
+
 ]
 
 

@@ -352,3 +352,9 @@ def P_hover(request):
 def P_AI(request):
     return render(request, 'roster_1/PRAVILA.html',  {'A': A, 'pravila': "34"})
 
+
+###################### ссылка для учебной страницы
+def KYRS(request):
+    return render(request, 'roster_1/KYRS_1.html',  {'A': A})
+################################
+
